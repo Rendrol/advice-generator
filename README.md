@@ -39,6 +39,15 @@ Using Aspect Ratio as Media Query breakpoint for responsive design.
 }
 ```
 
+Using Box shadow to achieve button hover glowing effect
+
+```css
+.advice-section button:hover {
+  -webkit-box-shadow: 0px 0px 28px 15px rgba(82, 255, 168, 0.6);
+  box-shadow: 0px 0px 28px 15px rgba(82, 255, 168, 0.6);
+}
+```
+
 Using JQuery .get() method to load data from API.
 Using JSON.parse() method to parse data into a JavaScript Object.
 

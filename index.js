@@ -5,4 +5,7 @@ $(window).on("load", function () {
     $("#advice-id").text("ADVICE #" + adviceId);
     $("#advice-text").text("“" + advice + "”");
   });
+  $(".advice-section button").click(function () {
+    location.reload();
+  });
 });
