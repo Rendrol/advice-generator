@@ -1,13 +1,51 @@
 body {
+  background-color: hsl(218, 23%, 16%);
+  color: hsl(193, 38%, 86%);
   font-family: "Manrope", sans-serif;
+  font-size: 28px;
+  text-align: center;
+  margin: 0;
 }
 
 /* Advice Section */
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% auto 30%;
+}
 
+.mobile-divider {
+  display: none;
+  width: 80%;
+}
+
+.desktop-divider {
+  width: 80%;
+}
+
+@media (max-aspect-ratio: 1/1) {
+  .grid-container {
+    display: block;
+  }
+  .mobile-divider {
+    display: initial;
+  }
+  .desktop-divider {
+    display: none;
+  }
+}
+.advice-section {
+  background-color: hsl(217, 19%, 24%);
+  box-sizing: border-box;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 30% 5%;
+}
 /* Attribution */
 .attribution {
+  position: relative;
   font-size: 11px;
   text-align: center;
+  top: 50vh;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);

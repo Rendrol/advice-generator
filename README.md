@@ -6,7 +6,7 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
+  - [What I learned](#Highlight)
 - [Author: Rendrol](#author)
 
 ## My process
@@ -15,18 +15,28 @@ This is a solution to the [Advice generator app challenge on Frontend Mentor](ht
 
 - Semantic HTML5 markup
 - CSS custom properties
+- CSS Grid
 - JavaScript
 - JQuery
 
-### What I learned
+### Highlight
 
 ```html
 <h1>Some HTML code I'm proud of</h1>
 ```
 
+Using CSS Grid to make responsive style.
+Using Aspect Ratio as Media Query breakpoint for responsive design.
+
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.grid-container {
+  display: grid;
+  grid-template-columns: 27% auto 27%;
+}
+@media (max-aspect-ratio: 1/1) {
+  .grid-container {
+    display: initial;
+  }
 }
 ```
 
