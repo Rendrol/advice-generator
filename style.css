@@ -8,44 +8,70 @@ body {
 }
 
 /* Advice Section */
-.grid-container {
-  display: grid;
-  grid-template-columns: 30% auto 30%;
+#advice-id {
+  color: hsl(150, 100%, 66%);
+  font-size: 12px;
+  letter-spacing: 4px;
+  margin-top: 2rem;
+}
+
+.divider {
+  width: 90%;
+}
+
+.pattern-divider {
+  margin: -1rem 0;
+}
+
+/* responsive card design */
+
+.advice-section {
+  background-color: hsl(217, 19%, 24%);
+  box-sizing: border-box;
+  border-radius: 15px;
+  display: inline-block;
+  padding: 1rem 2rem;
+  position: absolute;
+  left: 30%;
+  bottom: 30%;
+  width: 40%;
 }
 
 .mobile-divider {
   display: none;
-  width: 80%;
-}
-
-.desktop-divider {
-  width: 80%;
 }
 
 @media (max-aspect-ratio: 1/1) {
-  .grid-container {
-    display: block;
-  }
   .mobile-divider {
     display: initial;
   }
   .desktop-divider {
     display: none;
   }
+  .advice-section {
+    width: 90%;
+    left: 5%;
+    bottom: 20%;
+  }
 }
-.advice-section {
-  background-color: hsl(217, 19%, 24%);
-  box-sizing: border-box;
-  border-radius: 15px;
-  display: inline-block;
-  margin: 30% 5%;
+
+/* button design */
+.advice-section button {
+  background-color: hsl(150, 100%, 66%);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  padding: 1rem;
+  position: relative;
+  bottom: -3rem;
 }
+
 /* Attribution */
 .attribution {
   position: relative;
   font-size: 11px;
   text-align: center;
-  top: 50vh;
+  top: 100vh;
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
